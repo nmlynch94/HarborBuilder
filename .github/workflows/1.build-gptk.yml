@@ -84,6 +84,7 @@ jobs:
           git add . && git commit -m "Apply base patch" 2>&1 >/dev/null
           cd wine
           patch -g0 -f < $WORKSPACE/patches/wine-msync/msync-cx22.patch
+          patch -p1 < $WORKSPACE/patches/stdout-hack.patch
           cd ..
           git add . && git commit -m "Apply msync patch" 2>&1 >/dev/null
           # Now we have a patched cxwine in /tmp/cxsrc, diff it against the original and put it into the formula template we produced earlier
