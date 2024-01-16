@@ -4,10 +4,10 @@
 name: Build GPTK
 
 on:
-  push:
-    branches: [ senpai ]
-  schedule:
-    - cron: "0 0 * * 0,4"
+  # push:
+    # branches: [ senpai ]
+  # schedule:
+  #   - cron: "0 0 * * 0,4"
   workflow_dispatch:
 
 jobs:
